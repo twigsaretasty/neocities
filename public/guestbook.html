@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>guestbook!</title>
+    <link rel="icon" type="image/x-icon" href="media/ant.png">
+    <style>
+        @font-face {
+        font-family: "Adelia";
+        src: url('/fonts/ADELIA.otf') format("opentype");
+        }
+
+        @font-face {
+        font-family: "Lexend";
+        src: url('/fonts/Lexend-VariableFont_wght.ttf') format("truetype");
+        }
+
+        @font-face {
+        font-family: "coolvetica";
+        src: url('/fonts/coolvetica\ rg.otf') format("opentype");
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url(media/ditto-bg.jpeg);
+            overflow: hidden;
+        }
+
+        main {
+            display: inline-block;
+        }
+
+        #content {
+            border: 3px solid black;
+            background-color: white;
+            padding: 20px;
+            position: relative;
+            margin: 0 auto;
+            transform: rotate(-3deg);
+            width: 900px;
+            height: 600px;
+            box-shadow: -15px 15px gray;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+
+        h1 {
+            font-family: Adelia, Arial, Helvetica;
+            text-align: center;
+            font-size: 40px;
+            text-shadow: 3px 2px lightblue;
+        }
+
+        footer {
+            position: absolute;
+            bottom: 0;
+            font-family: Lexend, Arial, Helvetica;
+            font-size: 10px;
+            text-decoration: none;
+        }
+
+        #credit {
+            font-size: 10px;
+            margin-top: -25px;
+        }
+
+        .text {
+            font-family: Lexend, Arial, Helvetica;
+            font-size: 14px;
+            text-decoration: none;
+            text-align: center;
+            color: black;
+        }
+
+        #sitemap, a {
+            font-size: 10px;
+            text-decoration: none;
+            color: black;
+        }
+
+        #sitemap:hover, a:hover {
+            color: rgb(255, 0,157);
+        }
+
+        @media screen and (max-width: 900px) {
+
+            body { 
+                overflow: scroll;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>guestbook</h1>
+    <p class="text" id="credit">built with <a href="https://virtualobserver.moe/ayano/comment-widget">this comment widget</a></p>
+    <div id="c_widget"></div>
+    <footer>
+        <p class="copyright"><a id="sitemap" href="sitemap.html">sitemap</a> © twigs 2025 <img src="media/bee2.gif"></p>
+    </footer>
+    <script src="guestbook.js"></script>
+</body>
+</html>

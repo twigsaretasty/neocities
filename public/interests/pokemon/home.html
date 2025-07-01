@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon</title>
+    <link rel="icon" type="image/x-icon" href="../media/ant.png">
+    <style>
+    @font-face {
+        font-family: "Lexend";
+        src: url('/fonts/Lexend-VariableFont_wght.ttf') format("truetype");
+    }
+    @font-face {
+        font-family: "Adelia";
+        src: url('/fonts/ADELIA.otf') format("opentype");
+    }
+    @font-face {
+        font-family: "coolvetica";
+        src: url('/fonts/coolvetica\ rg.otf') format("opentype");
+    }
+    html, body {
+        height: 100%;
+    }
+
+    html {
+        display: table;
+        margin: auto;
+    }
+
+    body {
+        display: table-cell;
+        vertical-align: middle;
+        background-color: #ffcb05;
+        text-align: center;
+    }
+
+    #title {
+        font-family: "Adelia", Arial, Helvetica, sans-serif;
+        text-shadow: 5px 2px #003a70;
+        text-align: center;
+        color: white;
+    }
+
+    #content {
+        width: 600px;
+        height: 350px;
+        background-color: #a7e0ff;
+        border-radius: 15px;
+        border: #003a70 2.5px dotted;
+        margin-top: 10px;
+    }
+
+    #blurb {
+        width: 450px;
+        text-align: center;
+        margin: auto;
+    }
+
+    .text {
+        font-family: 'Lexend', 'Roboto', Verdana;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    #subtext {
+        font-size: 10px;
+    }
+
+    #buttons {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        margin: 25px;
+        overflow: scroll;
+        max-height: 350px;
+    }
+
+    .link-button {
+        background-color: #3d7dca;
+        color: black;
+        text-decoration: none;
+        font-family: 'coolvetica', 'Roboto', Verdana;
+        font-size: 15px;
+        padding: 15px;
+        margin-top: 15px;
+        border-radius: 5px;
+    }
+
+    .link-button:hover{
+        background-color: #003a70;
+        color: white;
+    }
+
+    img {
+        position: absolute;
+        width: 200px;
+        transition: transform 0.3s;
+    }
+
+    img:hover {
+        border: white 5px solid;
+        border-radius: 10px;
+    }
+
+    /* neg rotations */
+    #one {
+        transform: rotate(-3deg);
+        left: 300px;
+        bottom: 500px;
+    }
+
+    #three {
+        transform: rotate(-3deg);
+        left: 300px;
+        bottom: 180px;
+    }
+
+    #five {
+        transform: rotate(-3deg);
+        right: 300px;
+        bottom: 340px;
+    }
+    
+    #one:hover, #three:hover, #five:hover {
+        transform: scale(1.25) rotate(6deg);
+        z-index: 1;
+    }
+    
+    /* pos rotations */
+    
+    #two {
+        transform: rotate(3deg);
+        left: 300px;
+        bottom: 340px;
+    }
+    
+    #four {
+        transform: rotate(3deg);
+        right: 300px;
+        bottom: 500px;
+    }
+
+    #six {
+        transform: rotate(3deg);
+        right: 300px;
+        bottom: 180px;
+    }
+
+    #two:hover, #four:hover, #six:hover {
+        transform: scale(1.25) rotate(-6deg);
+        z-index: 1;
+    }
+
+    #middle {
+        display: flex;
+        /* justify-content: cen; */
+    }
+
+    #prev {
+        color: #397eff;
+        font-family: monospace;
+        padding: 5px;
+        background: #a7e0ff;
+        border-radius: 5px;
+        border: #003a70 2px dotted;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    </style>
+</head>
+<body>
+    <sub id="prev">
+        <a href="../home.html">back to interests</a>
+    </sub>
+    <div id="content">
+        <div id="blurb">
+            <h1 id="title">Pokemon</h1>
+            <h3 class="text" id="subtext">below are my thinkpieces/other pages dedicated to this franchise!</h3>
+            <h3 class="text">I mostly like the anime, but I like the games too! I have also dabbled in the manga</h3>
+            <div id="buttons">
+                <a href="#" class="link-button">my history</a>
+                <a href="ostrio.html" class="link-button">os trio</a>
+            </div>
+        </div>
+    </div>
+    <img id="one" src="media/alain.png" alt="Alain from Pokemon XY">
+    <img id="two" src="media/misty1.gif" alt="Misty in Pokemon Heroes (2002)">
+    <img id="three" src="media/dp.png" alt="Ash, Brock, and Dawn playing with Pokemon on the beach">
+    <img id="four" src="media/ostriocity.png" alt="Misty, Ash, and Brock strolling the streets">
+    <img id="five" src="media/ashnleon.png" alt="Charizard, Leon, Ash, and Pikachu">
+    <img id="six" src="media/gastrodonlove.gif" alt="Gastrodon getting some well-deserved pats">
+</body>
+</html>

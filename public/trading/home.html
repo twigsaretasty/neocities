@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>twigsaretasty's collection list</title>
+    <link rel="icon" type="image/x-icon" href="../media/ant.png">
+    <style>
+    @font-face {
+        font-family: "Lexend";
+        src: url('/fonts/Lexend-VariableFont_wght.ttf') format("truetype");
+    }
+    @font-face {
+        font-family: "Adelia";
+        src: url('/fonts/ADELIA.otf') format("opentype");
+    }
+    @font-face {
+        font-family: "coolvetica";
+        src: url('/fonts/coolvetica\ rg.otf') format("opentype");
+    }
+
+    html, body {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+    }
+
+    html {
+        display: table;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+    }
+
+    #content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 100vw;
+        margin: 0 auto;
+        height: 950px;
+    }
+
+    .text {
+        font-family: 'Lexend', 'Roboto', Verdana;
+        font-size: 14px;
+    }
+
+    header {
+        display: flex;
+        justify-content: stretch;
+        align-items: center;
+        background-color: black;
+        padding: 10px 20px;
+        width: 100vw;
+        position: fixed;
+    }
+
+    h1 {
+        color: white;
+        font-family: "Adelia";
+        font-size: 20px;
+        vertical-align: center;
+        padding: 20px;
+    }
+
+    #navbar {
+        padding: 10px;
+        display: flex;
+        margin-left: auto;
+    }
+
+    #blurb {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        padding-top: 80px;
+    }
+
+    footer {
+        flex: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        font-family: Lexend, Arial, Helvetica;
+        font-size: 10px;
+    }
+
+    @media screen and (max-width: 900px) {
+
+        header {
+            flex-direction: column;
+            text-align: center;
+            margin: 0;
+        }
+
+        h1 {
+            font-size: 15px;
+            padding: 15px;
+        }
+
+        .text {
+            font-size: 12px;
+        }
+
+        #navbar {
+            margin: 0;
+            overflow: scroll;
+        }
+
+    }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <header>
+            <h1>collection of twigsaretasty</h1>
+        </header>
+        <div id="blurb">
+            <p class="text">hello!</p>
+            <p class="text">i have moved my trading site <a href="https://twigsaretasty.github.io/trade/">here</a>!</p>
+        </div>
+    </div>
+    <div id="footer">
+        <footer>
+            <p class="copyright">© twigs 2025 <img src="../media/bee2.gif" alt="bee"> </p>
+        </footer>
+    </div>
+</body>
+</html>

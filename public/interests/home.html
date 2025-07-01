@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>normal corner</title>
+    <link rel="icon" type="image/x-icon" href="../media/ant.png">
+    <style>
+    @font-face {
+        font-family: "Lexend";
+        src: url('/fonts/Lexend-VariableFont_wght.ttf') format("truetype");
+    }
+    @font-face {
+        font-family: "Adelia";
+        src: url('/fonts/ADELIA.otf') format("opentype");
+    }
+    @font-face {
+        font-family: "coolvetica";
+        src: url('/fonts/coolvetica\ rg.otf') format("opentype");
+    }
+    /* PAGE STUFF:  */
+    html, body {
+        height: 100%;
+    }
+
+    html {
+        display: table;
+        margin: auto;
+    }
+
+    body {
+        display: table-cell;
+        vertical-align: middle;
+        background-color: #a7d9ff;
+    }
+
+    #content {
+        /* max-width: 100%; */
+        text-align: center;
+    }
+
+    /* MAIN  */
+
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: top;
+        flex-direction: row;
+        gap: 30px;
+        height: 600px;
+    }
+
+    #prev {
+        color: white;
+        font-family: monospace;
+        padding: 5px;
+        background: #a7d9ff;
+        border-radius: 5px;
+        border: 2px dotted #7598C5;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    /* box visuals */
+    .sidebar, #blurb {
+        /* background-color: #a7d9ff9e; */
+        background-image: url(media/grid-bg.jpeg);
+        outline: 2px dashed #7598C5;
+        border-radius: 5px;
+        text-align: center;
+        padding: 8px;
+        overflow: scroll;
+        margin-top: 20px;
+    }
+
+    .sidebar {
+        width: 265px;
+    }
+
+    #list {
+        list-style-type: none;
+        padding: 0;;
+    }
+
+    #mid {
+        width: 415px;
+    }
+
+    header {
+        font-family: 'Adelia';
+        text-shadow: 2px 2px #7598C5;
+        font-size: 20px;
+    }
+
+    #gen, #ship, #char {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        gap: 3px;
+    }
+
+    .text {
+        font-family: 'Lexend', 'Roboto', Verdana;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    #small {
+        font-size: 10px;
+    }
+
+    #pink {
+        color: #FF39B3;
+    }
+
+    #buttons {
+        text-align: center;
+        /* margin-top: 20px; */
+        display: flex;
+        flex-direction: column;
+    }
+
+    .link-button {
+        background-color: #a7d9ff;
+        color: black;
+        text-decoration: none;
+        font-family: 'coolvetica', 'Roboto', Verdana;
+        font-size: 15px;
+        padding: 15px 30px;
+        margin-top: 15px;
+        border-radius: 5px;
+    }
+
+    .standalone {
+        background-color: #FF39B3;
+        color: white;
+    }
+    
+    .link-button:hover{
+        background-color: #7598C5;
+        color: white;
+    }
+    
+    .standalone:hover {
+        background-color: #ffcaeb;
+        color: black;
+    }
+    /* footer */
+
+    footer {
+        width: 100%;
+        font-size: 10px;
+        text-align: center;
+        margin-top: 40px;
+        font-family: Lexend, Arial, Helvetica;
+    }
+
+    #sitemap {
+        color: black;
+        text-decoration: none;
+    }
+
+    #sitemap:hover {
+        color: rgb(255, 0, 157)
+    }
+
+    </style>
+</head>
+<body>
+    <div id="content">
+        <sub id="prev"><a href="../home.html">back to home</a></sub>
+        <main>
+            <div class="sidebar" id="favs">
+                <header>favs</header>
+                <div id="char">
+                    <a href="http://marvel.ravenbeauty.net/ant-man/"><img class="fanlisting" src="media/fanlistings/scott.png" alt="Scott Lang fanlisting"></a>
+                    <a href="https://pkmn.kirai.org/misty/"><img class="fanlisting" src="media/fanlistings/misty.png" alt="Misty fanlisting"></a>
+                    <a href="https://noble-scarlet.net/stella/"><img class="fanlisting" src="media/fanlistings/stella.png" alt="Stella fanlisting"></a>
+                    <a href="https://heartdreams.net/aurora/index.php"><img class="fanlisting" src="media/fanlistings/aurora.png" alt="Aurora fanlisting"></a>
+                    <a href="https://anna.reikou.org/"><img class="fanlisting" src="media/fanlistings/anna.png" alt="Anna fanlisting"></a>
+                </div>
+                <div id="ship">
+                    <a href="https://foggy-listings.neocities.org/emmelle/"><img class="fanlisting" src="media/fanlistings/ellemmett.png" alt="emmelle fanlisting"></a>
+                    <a href="https://noble-scarlet.net/frog/"><img class="fanlisting" src="media/fanlistings/tianaveen.png" alt="tiana & naveen fanlisting"></a>
+                    <a href="https://noble-scarlet.net/cute/"><img class="fanlisting" src="media/fanlistings/stellandon.gif" alt="stella & brandon fanlisting"></a>
+                    <a href="http://mermaid.hatsukoi.org"><img class="fanlisting" src="media/fanlistings/arieleric.jpg" alt="ariel & eric fanlisting"></a>
+                    <a href="https://thewildrose.org/cinderellaprince/index.php"><img class="fanlisting" src="media/fanlistings/cinderellaprince.gif" alt="cinderella & prince fanlisting"></a>
+                </div>
+            </div>
+            <div id="mid">
+                <div id="blurb">
+                    <header>interests</header>
+                    <p class="text">a collection of my interests via fanlistings!!</p>
+                    <p id="small" class="text">please talk to me about anything here...</p>
+                    <ul class="text" id="list">
+                        <li>← specific faves</li>
+                        <li>→ shrine hubs (standlone shrines are <span id="pink">pink</span>!)</li>
+                        <li>↓ general interests</li>
+                    </ul>
+                    <p class="text">these are roughly in order of what i like most but not at all inclusive!</p>
+                </div>
+                <div id="gen">
+                    <a href="https://love.strongisfighting.org/legallyblonde/index.php"><img  class="fanlisting" src="media/fanlistings/legallyblonde.png" alt="Legally Blonde (2001) fanlisting"></a>
+                    <a href="https://amity.seaincense.com/index.php"><img  class="fanlisting" src="media/fanlistings/pkmngames.png" alt="pokemon fanlisting"></a>
+                    <a href="http://fan.ravenbeauty.net/ducktales/index.php"><img  class="fanlisting" src="media/fanlistings/ducktales87.gif" alt="DuckTales (1987) fanlisting"></a>
+                    <a href="https://fanimated.net/darkwing/"><img  class="fanlisting" src="media/fanlistings/darkwingduck.png" alt="Darkwing Duck fanlisting"></a>
+                    <a href="https://friends.seaincense.com/"><img  class="fanlisting" src="media/fanlistings/friendsforlife.png" alt="anipoke fanlisting"></a>
+                </div>
+            </div>
+            <div class="sidebar" id="shrines">
+                <header>shrines</header>
+                <p class="text"></p>
+                <div id="buttons">
+                    <a href="legally-blonde/home.html" class="link-button">legally blonde</a>
+                    <a href="marvel/home.html" class="link-button">marvel</a>
+                    <a href="pokemon/home.html" class="link-button">pokemon</a>
+                    <a href="theatre.html" class="link-button standalone">theatre</a>
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <p class="copyright"><a id="sitemap" href="../sitemap.html">sitemap</a> © twigs 2023 - 20XX <img src="../media/bee2.gif"></p>
+    </footer>
+</body>
+</html>

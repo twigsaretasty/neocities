@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omigod You Guys!!!</title>
+    <link rel="icon" type="image/x-icon" href="../media/ant.png">
+    <style>
+    @font-face {
+        font-family: "Lexend";
+        src: url('/fonts/Lexend-VariableFont_wght.ttf') format("truetype");
+    }
+    @font-face {
+        font-family: "Adelia";
+        src: url('/fonts/ADELIA.otf') format("opentype");
+    }
+    @font-face {
+        font-family: "coolvetica";
+        src: url('/fonts/coolvetica\ rg.otf') format("opentype");
+    }
+    html, body {
+        height: 100%;
+    }
+
+    html {
+        display: table;
+        margin: auto;
+    }
+
+    body {
+        display: table-cell;
+        vertical-align: middle;
+        background-color: #FF9FDA;
+        text-align: center;
+    }
+
+    #title {
+        font-family: "Adelia", Arial, Helvetica, sans-serif;
+        text-shadow: 3px 2px #FF39B3;
+        text-align: center;
+    }
+
+    #content {
+        width: 600px;
+        height: 350px;
+        background-color: #FFCAEB;
+        border-radius: 15px;
+        border: #FF39B3 2.5px dotted;
+        margin-top: 10px;
+    }
+
+    #blurb {
+        width: 450px;
+        text-align: center;
+        margin: auto;
+    }
+
+    .text {
+        font-family: 'Lexend', 'Roboto', Verdana;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    #subtext {
+        font-size: 10px;
+    }
+
+    #buttons {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        margin: 25px;
+        overflow: scroll;
+        max-height: 350px;
+    }
+
+    .link-button {
+        background-color: #ffa7fc;
+        color: black;
+        text-decoration: none;
+        font-family: 'coolvetica', 'Roboto', Verdana;
+        font-size: 15px;
+        padding: 15px;
+        margin-top: 15px;
+        border-radius: 5px;
+    }
+
+    .link-button:hover{
+        background-color: #c575ad;
+        color: white;
+    }
+
+    img {
+        position: absolute;
+        width: 200px;
+        transition: transform 0.3s;
+    }
+
+    img:hover {
+        border: white 5px solid;
+        border-radius: 10px;
+    }
+
+    /* neg rotations */
+    #one {
+        transform: rotate(-3deg);
+        left: 300px;
+        bottom: 500px;
+    }
+
+    #three {
+        transform: rotate(-3deg);
+        left: 300px;
+        bottom: 180px;
+    }
+
+    #five {
+        transform: rotate(-3deg);
+        right: 300px;
+        bottom: 340px;
+    }
+    
+    #one:hover, #three:hover, #five:hover {
+        transform: scale(1.25) rotate(6deg);
+        z-index: 1;
+    }
+    
+    /* pos rotations */
+    
+    #two {
+        transform: rotate(3deg);
+        left: 300px;
+        bottom: 340px;
+    }
+    
+    #four {
+        transform: rotate(3deg);
+        right: 300px;
+        bottom: 500px;
+    }
+
+    #six {
+        transform: rotate(3deg);
+        right: 300px;
+        bottom: 180px;
+    }
+
+    #two:hover, #four:hover, #six:hover {
+        transform: scale(1.25) rotate(-6deg);
+        z-index: 1;
+    }
+
+    #middle {
+        display: flex;
+        /* justify-content: cen; */
+    }
+
+    #prev {
+        color: #FF39B3;
+        font-family: monospace;
+        padding: 5px;
+        background: #FFCAEB;
+        border-radius: 5px;
+        border: #FF39B3 2px dotted;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    </style>
+</head>
+<body>
+    <sub id="prev">
+        <a href="../home.html">back to interests</a>
+    </sub>
+    <div id="content">
+        <div id="blurb">
+            <h1 id="title">Legally Blonde</h1>
+            <h3 class="text" id="subtext">below are my thinkpieces/other pages dedicated to this franchise!</h3>
+            <h3 class="text">I like the 2001 movie, its 2003 sequel, and particularly the 2007 musical!</h3>
+            <div id="buttons">
+                <a href="history.html" class="link-button">my history</a>
+                <a href="lyrics/0.html" class="link-button">evolution of the lyrics</a>
+            </div>
+        </div>
+    </div>
+    <img id="one" src="media/curtaincall.png" alt="The original Broadway cast taking bows in San Francisco">
+    <img id="two" src="media/elle2.png" alt="Elle Woods (Reese Witherspoon) in Legally Blonde (2001)">
+    <img id="three" src="media/ellemmett.png" alt="Elle Woods (Laura Bell Bundy) and Emmett Forrest (Christian Borle)">
+    <img id="four" src="media/ellemmett2.png" alt="Emmett Richmond (Luke Wilson) and Elle Woods (Reese Witherspoon) in Legally Blonde 2: Red, White, & Blonde (2003)">
+    <img id="five" src="media/elle3.png" alt="Elle Woods (Laura Bell Bundy) in Legally Blonde: The Musical (2007)">
+    <img id="six" src="media/elle1.png" alt="Elle Woods (Reese Witherspoon) in Legally Blonde (2001)">
+</body>
+</html>

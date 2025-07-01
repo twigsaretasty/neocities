@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twigs Moment | Home</title>
+    <link rel="icon" type="image/x-icon" href="media/ant.png">
+    <style>
+        @font-face {
+        font-family: "Adelia";
+        src: url('/fonts/ADELIA.otf') format("opentype");
+        }
+
+        @font-face {
+        font-family: "Lexend";
+        src: url('/fonts/Lexend-VariableFont_wght.ttf') format("truetype");
+        }
+
+        @font-face {
+        font-family: "coolvetica";
+        src: url('/fonts/coolvetica\ rg.otf') format("opentype");
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url(media/ditto-bg.jpeg);
+            overflow: hidden;
+        }
+
+        main {
+            display: inline-block;
+        }
+
+        #content {
+            border: 3px solid black;
+            background-color: white;
+            padding: 20px;
+            position: relative;
+            margin: 0 auto;
+            transform: rotate(-3deg);
+            width: 900px;
+            height: 600px;
+            box-shadow: -15px 15px gray;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+
+        #front {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100%;
+        }
+
+        h1 {
+            font-family: Adelia, Arial, Helvetica;
+            text-align: center;
+            font-size: 40px;
+            text-shadow: 3px 2px lightblue;
+        }
+
+        .text, a {
+            font-family: Lexend, Arial, Helvetica;
+            font-size: 14px;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: rgb(255, 0, 157);
+        }
+        
+        #top-bar {
+            display: flex;
+            gap: 10px;
+            padding: 10px;
+            width: 900px;
+            height: 100px;
+            align-items: center;
+            box-sizing: border-box;
+        }
+
+        #top-left {
+            padding: 10px;
+            width: 21%;
+            box-sizing: border-box;
+            height: 100%;
+        }
+
+        #top-left p, #top-right p {
+            font-size: 10px;
+        }
+
+        #button {
+            display: flex;
+            gap: 5px;
+        }
+        
+        #top-middle {
+            padding: 20px;
+            box-sizing: border-box;
+            width: 58%;
+        }
+        
+        #top-right {
+            display: inline-block;
+            box-sizing: border-box;
+            padding: 10px;
+            width: 24%;
+            height: 100%;
+            justify-content: center;
+        }
+
+        .friend-button {
+            width: 90%;
+        }
+
+        #top-right li, #top-right a {
+            font-family: Lexend, Arial, Helvetica;
+            font-size: 9px;
+            text-align: left;
+            text-decoration: none;
+        }
+
+        #updates {
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+            border-top: 2px solid black;
+            border-bottom: 2px solid black;
+            width: 100%;
+            height: 32px;
+            padding: 5px;
+            overflow-y: scroll;
+            font-family: Lexend, Arial, Helvetica;
+        }
+
+        #updates p {
+            display: flex;
+            justify-content: space-between;
+            margin: 0;
+        }
+
+        .date {
+            margin-left: auto;
+        }
+
+        #headlines {
+            display: flex;
+            box-sizing: border-box;
+            gap: 10px;
+            padding: 10px;
+            width: 906px;
+            height: 150px;
+            border-bottom: 1px solid black;
+        }
+
+        #vl-headlines-r, #vl-headlines-l {
+            border: 0.4px solid black;
+        }
+
+        #vl-headlines-r {
+            order: 2;
+            /* padding: 4px; */
+        }
+
+        #vl-headlines-l {
+            order: 4;
+        }
+
+        #status, #piclog, #selfinsert {
+            width: 302px;
+            box-sizing: border-box;
+            height: 100%;
+        }
+
+        #status {
+            font-size: smaller;
+            font-family: Lexend, Arial, Helvetica;
+            margin: 30px 15px;
+            order: 3;
+        }
+
+        #statuscafe {
+            padding: .5em;
+            background-color: #CBE8FF;
+            border: 1px solid midnightblue;
+        }
+
+        #statuscafe-username {
+            margin-bottom: .5em;
+        }
+
+        #statuscafe-content {
+            margin: 0 1em 0.5em 1em;
+        }
+
+        #gb {
+            color: #7598C5
+        }
+
+        #gb:hover {
+            color: rgb(255, 0,157)
+        }
+        
+        #piclog {
+            order: 1;
+            padding: 0px;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+        
+        #selfinsert {
+            padding-left: 5px;
+            order: 5;
+        }
+
+        #selfinsertwebring {
+            width: 50%;
+            height: 40%;
+        }
+
+        #cc {
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+        }
+
+        ul {
+            padding: 0;
+            margin-top: -5px;
+            margin-bottom: -5px;
+        }
+
+        #buttons {
+            display: flex;
+            gap: 5px;
+        }
+
+        a {
+            color: black;
+        }
+
+        #bottom {
+            display: flex;
+            justify-content: space-between;
+            width: 900px;
+            box-sizing: border-box;
+            position: relative;
+        }
+
+        #nav {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            height: 100%;
+        }
+
+        #vl {
+            border-left: 0.5px solid black;
+            border-right: 0.5px solid black;
+            height: 85%;
+            margin: 20px 20px;
+        }
+
+        .header {
+            font-family: Adelia, Arial, Helvetica;
+            text-align: center;
+            text-shadow: 1px 2px lightpink;
+            font-size: 26px;
+            margin-bottom: 2px;
+        }
+
+        #top-bar,
+        #updates,
+        #headlines,
+        #bottom {
+            flex-shrink: 0;
+            flex-grow: 0;
+            width: 900px;
+            box-sizing: border-box;
+        }
+
+        .link-button {
+            font-family: Lexend;
+            color: black;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 40px;
+            background-color: #a7d9ff;
+            border-radius: 5px;
+            margin-top: 10px; 
+        }
+
+        .link-button:hover {
+            background-color: #7598C5;
+            color: white;
+        }
+
+        #bottom-right {
+            box-sizing: border-box;
+            padding: 10px;
+            width: 70%;
+            display: flex;
+            gap: 10px;
+        }
+
+        #indent {
+            margin-left: 50px;
+        }
+
+        .sub {
+            font-size: 10px;
+            margin-top: -5px;
+        }
+
+        #chatbox {
+            width: 250px;
+            height: 315px;
+            border: 0;
+            margin: 0;
+            overflow: scroll;
+        }
+
+        #pikachu-img {
+            position: absolute;
+            width: 200px;
+            bottom: -30px;
+            left: -90px;
+        }
+
+        footer {
+            width: 100%;
+            text-align: center;
+            font-family: Lexend, Arial, Helvetica;
+            font-size: 10px;
+        }
+
+        #sitemap {
+            font-size: 10px;
+        }
+
+        @media screen and (max-width: 900px) {
+
+            body { 
+                overflow: scroll;
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+    <main id="content">
+        <div id="front">
+            <div id="top-bar">
+                <div id="top-left">
+                    <p class="text">add me to your site if you want :]</p>
+                    <div id="button">
+                        <img id="site-button" src="media/gastrobutton.jpg" alt="gastrodon with the text 'twigsaretasty'">
+                        <img id="site-gif" src="media/twigsaretasty.gif" alt="twigsaretasty flashing text">
+                    </div>
+                </div>
+                <div id="top-middle">
+                    <h1>the daily twigs</h1>
+                </div>
+                <div id="top-right">
+                    <p class="text">check out my friends!</p>
+                    <div id="buttons">
+                        <a href="https://bondiaries.neocities.org"><img class="friend-button" alt="button for bondiaries" src="media/buttons/bon.png" href="https://bondiaries.neocities.org">
+                        </a>
+                        <a href="https://bearhamtaro.neocities.org/"><img class="friend-button" alt="button for bearhamtaro" src="media/buttons/violet.png"></a>
+                    </div>
+                </div>
+            </div>
+            <div id="updates">
+                <p>legally blonde history page! + misc cleanups<span class="date">6/08/2025</span></p>
+                <p>some misc cleanups<span class="date">5/13/2025</span></p>
+                <p>updated shrines (now interests) page! moved fanlistings there<span class="date">5/10/2025</span></p>
+                <p>fanlistings back on home page! (for now)<span class="date">5/09/2025</span></p>
+                <p>home page reformatting plus musical theatre rambles<span class="date">4/20/2025</span></p>
+                <p>added sitemap + misc page cleanup<span class="date">4/18/2025</span></p>
+                <p>home page css + some html touchup<span class="date">1/21/2025</span></p>
+                <p>home page revamp! start of twigsaretasty v2...<span class="date">11/10/2024</span></p>
+            </div>
+            <div id="headlines">
+                <div id="status">
+                    <div id="statuscafe"><div id="statuscafe-username"></div><div id="statuscafe-content"></div></div><script src="https://status.cafe/current-status.js?name=quantwigmania" defer></script>
+                </div>
+                <div id="vl-headlines-r"></div>
+                <div id="piclog">
+                    <a href="https://piclog.blue/profile.php?id=796"><img id="cc" src="https://piclog.blue/latest.php?id=796" alt="most recent piclog"></a>
+                </div>
+                <div id="vl-headlines-l"></div>
+                <div id="selfinsert">
+                    <!--START OF SELF INSERT WEBRING-->
+                        <div id="selfinsertwebring">
+                            <script src="showWebring.js"></script>
+                        </div>
+                    <!--END OF SELF INSERT WEBRING-->
+                </div>
+            </div>
+            <div id="bottom">
+                <div id="nav">
+                    <p class="header">navigation</p>
+                    <a class="link-button" href="interests/home.html">interests</a>
+                    <a class="link-button" href="archive/edits.html">edit archive</a>
+                    <!-- <a class="link-button" href="questions/questions.html">questions</a> -->
+                </div>
+                <div id="vl"></div>
+                <div id="bottom-right">
+                    <div id="about">
+                        <p class="text">Hello!!!! i'm Twigs (she/her)!</p>
+                        <p class="text">i love to yap!!! thanks for checking out my tiny corner of the internet!</p>
+                        <p class="text">to contact me:</p>
+                        <div id="links">
+                            <ul>
+                                <li class="text">sign my <a id="gb" href="guestbook.html">guestbook</a></li>
+                                <li class="text">email: twigsaretasty@gmail.com</li>
+                                <li class="text">discord: email me for my user!</li>
+                            </ul>
+                            <p>
+                            <a href="https://neocities.org/site/twigsaretasty">neocities</a> /
+                            <a href="https://www.tumblr.com/quantwigmania">tumblr</a> /
+                            <a href="https://www.twitter.com/scotthoqe">twitter</a> /
+                            <!-- <a href="https://bsky.app/profile/twigsaretasty.bsky.social">bluesky</a> / -->
+                            <a href="https://letterboxd.com/quantwigmania/">letterboxd</a> /
+                            <a href="https://www.serializd.com/user/scotthope">serializd</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div id="chat-div">
+                        <iframe id="chatbox" src="https://www3.cbox.ws/box/?boxid=3533587&boxtag=dnAS7f" allowtransparency="yes" allow="autoplay"></iframe> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="media/pikachu.png" alt="pikachu with balloons laying on a cloud" id="pikachu-img">
+    </main>
+    <footer>
+        <p class="copyright"><a id="sitemap" href="sitemap.html">sitemap</a> © twigs 2023-20XX<img src="media/bee2.gif"></p>
+    </footer>
+</body>
+</html>

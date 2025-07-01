@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my edit archive</title>
+    <link rel="icon" type="image/x-icon" href="../media/ant.png">
+    <style>
+    @font-face {
+        font-family: "Lexend";
+        src: url('/fonts/Lexend-VariableFont_wght.ttf') format("truetype");
+    }
+    @font-face {
+        font-family: "Adelia";
+        src: url('/fonts/ADELIA.otf') format("opentype");
+    }
+    @font-face {
+        font-family: "coolvetica";
+        src: url('/fonts/coolvetica\ rg.otf') format("opentype");
+    }
+    html, body {
+        height: 100%;
+    }
+
+    html {
+        display: table;
+        margin: auto;
+    }
+
+    body {
+        display: table-cell;
+        vertical-align: middle;
+        background-color: #CBE8FF;
+        /* padding: 20px; */
+    }
+    #content {
+        max-width: 900px;
+        display: flex;
+
+    }
+
+    .sidebar {
+        height: 100%; /* 100% Full-height */
+        width: 0; /* 0 width - change this with JavaScript */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Stay on top */
+        top: 0;
+        left: 0;
+        background-color: #e7f4ff; /* Black*/
+        overflow-x: hidden; /* Disable horizontal scroll */
+        padding-top: 45px; /* Place content 60px from the top */
+        transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+    }
+    .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 20px;
+        margin-left: 50px;
+        padding: 10px;
+    }
+    #progress {
+        text-align: center;
+    }
+    #sub {
+        text-align: center;
+        font-size: 10px;
+        padding-top: -10px;
+    }
+    .icon {
+        width: 200px;
+    }
+    .openbtn {
+        font-size: 20px;
+        cursor: pointer;
+        background-color: #111;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+    }
+
+    .openbtn:hover {
+        background-color: #444;
+    }
+    .text {
+        font-family: 'Lexend', 'Roboto', Verdana;
+        font-size: 14px;
+        text-align: left;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    #blurb {
+        font-family: 'Lexend', 'Roboto', Verdana;
+        font-size: 10px;
+        text-align: left;
+    }
+
+    main {
+        max-width: 500px;
+        max-height: 700px;
+        padding: 10px;
+        transition: margin-left .5s; /* If you want a transition effect */
+        padding: 20px;
+        display: flex;
+    }
+    #thing {
+        order: 2;
+    }
+    #feed {
+        max-height: 700px;
+        width: 500px;
+        overflow: scroll;
+    }
+    h1 {
+        font-family: 'Adelia';
+        text-shadow: 2px 2px #7598C5;
+        font-size: 20px;
+        text-align: center;
+    }
+    a {
+        color:#7598C5;
+    }
+    a:hover {
+        color: white;
+    }
+
+    /* post stuff */
+    .username-bar {
+        display: flex;
+        background-color: white;
+        width: 300px;
+        text-align: center;
+    }
+    .pfp {
+        border-radius: 100px;
+        width: 32px;
+        height: 32px;
+        display: block;
+        padding: 2px;
+        margin-top: -1px;
+    }
+    .username {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 11px;
+        text-align: left;
+        margin: 8px;
+    }
+    video {
+        width: 100%;
+    }
+    .post {
+        border-radius: 10px;
+        width: 475px;
+        background-color: white;
+        padding: 5px;
+        margin-bottom: 20px;
+    }
+    .post-text {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 11px;
+    }
+    .caption {
+        overflow: scroll;
+        max-height: 90px;
+        text-align: left;
+    }
+    .date {
+        text-align: left;
+        text-transform: uppercase;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 8px;
+        color: gray;
+    }
+
+    footer {
+        width: 100%;
+        font-size: 10px;
+        margin-top: 40px;
+        text-align: center;
+    }
+    
+    .copyright {
+        font-family: Lexend, Arial, Helvetica;
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <aside id="history" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">close</a>
+            <p class="text">thank you to w3 schools for this sidebar btw. kisses</p>
+            <p class="text">i first started "editing" in 2017! i started out making photo edits, particulalry profile pcitures or "icons" as the community liked to call them. they're practially the same thing. i had many different usernames, i think i started with twig_edits and went on to hold electric.icons, MAYBE iconytwig and i ended up as iconydew. i've now deleted my account (and lost most of the knowledge i gained lol) but i kept some of my earlier icons and the ones i was most proud of! here some of them are, i might make a whole new page dedicated to them all also :3</p>
+            <div id="progress">
+                <img class="icon" src="media/angelheart.png" alt="icon with the text 'angelheart's edits'">
+                <img class="icon" src="media/misty.png" alt="icon with the text 'lower your expectations'">
+                <p class="text" id="sub">my very first icon (left) vs my last icon (right)</p>
+            </div>
+            <p class="text">i started video editing in late 2018! these are the posts that are shown in the main feed. i started in inshot and iMovie, and moved to videostar in early 2019. by the time covid hit, i decided to sit down and learn after effects, and i've stayed there ever since! after effects is truly my favourite program i've used, although it's a bit difficult to learn.</p>
+            <p class="text">my main account started as callmewtwig (when i made it, i didn't intend to be a video editing account!) and i later changed to twigsfall that december. i ended up changing my name to gastrozard in august of 2021, and that has stuck since! i use this account for anything animated that i edit.</p>
+            <p class="text">in 2020, i also opened another account named antlvngs! i use this account for live action media that i edit, which is usually marvel (ant-man and the wasp).</p>
+        </aside>
+        <main id="main">
+            <div id="button">
+                <button class="openbtn" onclick="openNav()">></button>
+            </div>
+            <div id="thing">
+                <h1>my edits</h1>
+                <div id="feed">
+                    <div id="blurb">
+                        <p>these are just a collection of the favourites i've made over the years. they're in reverse order from when they were uploaded onto my website. you can find more on <a href="https://instagram.com/gastrozard" target="_blank">gastrozard</a> and <a href="https://instagram.com/antlvngs" target="_blank">antlvngs</a>!</p>
+                        <p>the dates on the posts are when they were originally made/posted</p>
+                        <p>last updated 4/18/2025</p>
+                        <p><a href="../home.html">go back home</a></p>
+                    </div>
+                    <!-- post -->
+                    <div class="post">
+                        <div class="username-bar">
+                            <img class="pfp" src="media/gastrozard.jpg" alt="misty">
+                            <p class="username">gastrozard</p>
+                        </div>
+                        <div class="edit">
+                            <video controls controlslist="nodownload" src="https://file.garden/ZWfvsdszsWLb2dgt/ellemmet.mp4"></video>
+                        </div>
+                        <div class="caption">
+                            <p class="post-text"><b>gastozard </b> wow it's been a while since i've been here! but i wanted to post this one because i am currently thinking about them Hard. i don't really edit anymore so it's a bit difficult when i do lol. i feel like i've lost all my skills. i don't like the skew transition here but i like the rest of it!
+                                <br><br>
+                                song: these days by wallows
+                                <br>
+                                ac dollaudios
+                            </p>
+                        </div>
+                        <p class="date">September 9, 2024</p>
+                    </div>
+                    <!-- end of post -->
+                    <!-- post -->
+                    <div class="post">
+                        <div class="username-bar">
+                            <img class="pfp" src="media/antlvngs.jpeg" alt="scott">
+                            <p class="username">antlvngs</p>
+                        </div>
+                        <div class="edit">
+                            <video controls controlslist="nodownload" src="https://file.garden/ZWfvsdszsWLb2dgt/dejavu.mp4"></video>
+                        </div>
+                        <div class="caption">
+                            <p class="post-text"><b>antlvngs </b>this is one i tried really hard to make fit with the scenes and the lyrics. i love explaining it to people because i feel like especially with this one, since it's a bit faster, it sort of goes unnoticed. anyways, so since the whole song is "deja vu" which is feeling like you've lived through something before and i really tried to emulate that with this one. while the overall song doesn't really fit with scott + hope's relationship, the "i know you get deja vu" stood out to me which is why i used the scene from amatw as the intro, sort of giving in to that "lived through" experience as hope is recalling the past and therefore their relationship. and then for the four quick beats that are close together, i tried to choose scenes from amatw that half related back to scenes from ant-man with the latter sort of sandwiched between the former. so it would go amatw scene > ant-man scene > ant-man scene > amatw scene. overall i think it came out pretty good for the vision i had! looking back almost 2 years later i wish i had used less blurs lol, but i'm still quite proud of it! and i love love love scotthope <3
+                                <br><br>
+                                song: deja vu – olivia rodrigo
+                                <br>
+                                ac xphilocaly
+                            </p>
+                        </div>
+                        <p class="date">february 14, 2022</p>
+                    </div>
+                    <!-- end of post -->
+                    <!-- post -->
+                    <div class="post">
+                        <div class="username-bar">
+                            <img class="pfp" src="media/gastrozard.jpg" alt="misty">
+                            <p class="username">gastrozard</p>
+                        </div>
+                        <div class="edit">
+                            <video controls controlslist="nodownload" src="https://file.garden/ZWfvsdszsWLb2dgt/looking%20at%20me.mp4"></video>
+                        </div>
+                        <div class="caption">
+                            <p class="post-text"><b>gastrozard</b> an older one but it was one of my favourites from when i made it! i don't like it as much now but i was super proud of doing the glitch thing when i made it. if i could make it lighter i would lol... have been meaning to revisit tho so hmmmm
+                                <br><br>
+                                song: looking at me – sabrina carpenter
+                                <br>
+                                ac kuteaudios
+                            </p>
+                        </div>
+                        <p class="date">october 12, 2019</p>
+                    </div>
+                    <!-- end of post -->
+                    <!-- post -->
+                    <div class="post">
+                        <div class="username-bar">
+                            <img class="pfp" src="media/antlvngs.jpeg" alt="scott lang">
+                            <p class="username">antlvngs</p>
+                        </div>
+                        <div class="edit">
+                            <video controls controlslist="nodownload" src="https://file.garden/ZWfvsdszsWLb2dgt/pump%20it2.mp4"></video>
+                        </div>
+                        <div class="caption">
+                            <p class="post-text"><b>antlvngs</b> this was originally an edit of alain from pokemon but i wanted to reuse the project file to post on my other account for once, so i made it into scott. the only thing different is the colours and the scenes, so i'm not sure why i like this one so much better than the alain one. kind of a big fan of it still, i wish i could edit like this again...
+                                <br><br>
+                                song: pump it – black eyed peas
+                                <br>
+                                ac/ib jayxor spc mine
+                            </p>
+                        </div>
+                        <p class="date">june 30, 2022</p>
+                    </div>
+                    <!-- end of post -->
+                    <!-- post -->
+                    <div class="post">
+                        <div class="username-bar">
+                            <img class="pfp" src="media/gastrozard.jpg" alt="misty">
+                            <p class="username">gastrozard</p>
+                        </div>
+                        <div class="edit">
+                            <video class="edit" controls="" controlslist="nodownload" src="https://file.garden/ZWfvsdszsWLb2dgt/safe%20n%20sound.mp4"></video>
+                        </div>
+                        <div class="caption">
+                            <p class="post-text"><b>gastrozard</b> an edit i made of the os trio that i remade from a friend's. i passed this off as my birthday present last year.
+                                <br><br>
+                                song: safe and sound – capital cities
+                                <br>
+                                ac dollaudios
+                            </p>
+                        </div>
+                        <p class="date">december 21, 2022</p>
+                    </div>
+                    <!-- end of post -->
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <p class="copyright"><a href="../sitemap.html">sitemap</a> © twigs 2025 <img src="../media/bee2.gif"></p>
+    </footer>
+    <script>
+        /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
+    function openNav() {
+    document.getElementById("history").style.width = "500px";
+    document.getElementById("main").style.marginLeft = "250px";
+    }
+
+    /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+    function closeNav() {
+    document.getElementById("history").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>twigs moments</title>
+    <link rel="icon" type="image/x-icon" href="media/ant.png">
+    <style>
+    @font-face {
+        font-family: "Adelia";
+        src: url('/fonts/ADELIA.otf') format("opentype");
+    }
+    @font-face {
+        font-family: "coolvetica";
+        src: url('/fonts/coolvetica\ rg.otf') format("opentype");
+        }
+    html {
+        display: table; 
+        margin: auto;
+        height: 100%
+    }
+    body {
+        background-image: url(/media/ditto-bg.jpeg);
+        display: table-cell;
+        vertical-align: middle;
+        padding: 20px;
+        height: 100%;
+    }
+    #content {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    #flex {
+        display: flex;
+    }
+    main {
+        order: 2;
+        background-color: white;
+        padding: 20px;
+        max-width: 600px;
+        max-height: 500px; /* change based on img */
+        border: 5px solid #7acafd;
+        border-radius: 5px;
+    }
+    h1 {
+        font-family: "Adelia", "Roboto", Verdana;
+        text-shadow: 2px 3px #c579ec;
+        font-size: smalls;
+    }
+    #gastrodon-sprite {
+        text-align: center;
+    }
+    #gastro-img {
+        width: 60px;
+    }
+    p {
+        text-align: center;
+    }
+    p, ul {
+        font-family: coolvetica, times, serif;
+    }
+    #button {
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .link-button {
+        background-color: #7acafd;
+        color: white;
+        text-decoration: none;
+        font-family: 'coolvetica', 'Roboto', Verdana;
+        font-size: 18px;
+        padding: 15px 30px;
+        margin-top: 50px;
+        border-radius: 5px;
+    }
+    .link-button:hover {
+        background-color: #c579ec;
+    }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <div id="flex">
+            <main>
+                <h1>twigs moments</h1>
+                <div id="gastrodon-sprite">
+                    <a href="http://pkmn.caelestis.nu" target="_blank" rel="noopener noreferrer" style="border: 0px none; background: transparent;" title="I Choose You! :: POKEMON"><img id="gastro-img" src="media/gastrodon.png" style="margin: auto -15px;"></a>
+                </div>
+                <ul>
+                    <li>mobile visuals may be a bit wonky... sorry!</li>
+                </ul>
+                <div id="button">
+                    <a class="link-button" href="home.html">enter!</a>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+</html>

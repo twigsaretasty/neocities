@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theatre</title>
+    <link rel="icon" type="image/x-icon" href="../media/ant.png">
+    <style>
+    /* fonts */
+    @font-face {
+        font-family: "Lexend";
+        src: url('/fonts/Lexend-VariableFont_wght.ttf') format("truetype");
+    }
+
+    @font-face {
+        font-family: "Adelia";
+        src: url('/fonts/ADELIA.otf') format("opentype");
+    }
+
+    body {
+        background-color: rgb(210, 244, 255);
+        margin: auto;
+        display: table-cell;
+        vertical-align: middle;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    #content {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    /* blurb */
+
+    #prev {
+        color: rgb(80, 183, 217);
+        font-family: monospace;
+        padding: 5px;
+        background: lightblue;
+        border-radius: 5px;
+        border: 2px dotted rgb(80, 183, 217);
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: top;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .box {
+        padding: 5px;
+        width: 250px;
+        box-sizing: border-box;
+        border: 2px dotted rgb(80, 183, 217);
+        border-radius: 20px;
+        text-align: center;
+        background-color: lightblue;
+        position: relative;
+        overflow: scroll;
+    }
+
+    #left {
+        height: 100%;
+    }
+
+    #title-box {
+        width: 25%;
+    }
+
+    #title-box p {
+        margin-top: -5px;
+    }
+
+    #seen p, #live p {
+        text-align: left;
+        margin-left: 5px;
+    }
+
+    #seen li, #live li {
+        text-align: left;
+    }
+
+    #seen ul, #live ul {
+        margin-top: -5px;
+    }
+
+    h1 {
+        font-family: Adelia, Arial, Helvetica;
+        font-size: 20px;
+        text-shadow: 3px 2px rgb(80, 183, 217);
+    }
+
+    p, li {
+        font-family: Lexend, Arial, Helvetica;
+        font-size: 12px;
+    }
+    
+    img {
+        box-sizing: border-box;
+        display: block;
+        width: 300px;
+        height: auto;
+    }
+
+    #pixelbill {
+        width: 100px;
+    }
+
+    #bottom-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .pixelbill-display {
+        width: 60px;
+    }
+
+    #pixelbill-container {
+        display: flex;
+        margin-top: 10px;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: rgb(80, 183, 217);
+    }
+
+    .text-box {
+        display: flex;
+        flex-direction: column;
+        overflow-y: scroll;
+        max-height: 100%;
+    }
+    
+    .text {
+        padding: 10px;
+        font-family: Lexend, Arial, Helvetica;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+        overflow: wrap;
+    }
+
+    .list li {
+        text-align: left;
+    }
+
+    #right {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        height: 100vh;
+    }
+
+
+
+    @media screen and (max-width: 900px) {
+
+        main {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .box {
+            width: 50%;
+        }
+
+        #title-box {
+            width: 80%;
+        }
+
+    }
+
+    </style>
+</head>
+<body>
+    <div id="content">
+        <sub id="prev">
+            <a href="home.html">back to interests</a>
+        </sub>
+        <main>
+            <div id="left">
+                <div id="seen" class="box">
+                    <h1>Seen:</h1>
+                    <p>in order of my favourites!<br>(note that this is specifically about the stage production)</p>
+                    <ol>
+                        <li>Legally Blonde</li>
+                        <li>Something Rotten!</li>
+                        <li>Into the Woods</li>
+                        <li>Falsettos</li>
+                        <li>Wicked</li>
+                        <li>Hairspray</li>
+                        <li>Come From Away</li>
+                        <li>Mean Girls</li>
+                        <li>Monty Python's Spamalot</li>
+                        <li>Some Like It Hot</li>
+                        <li>Dear Evan Hansen</li>
+                        <li>Frozen</li>
+                        <li>Merrily We Roll Along</li>
+                        <li>All Shook Up</li>
+                        <li>Hamilton</li>
+                        <li>The Drowsy Chaperone</li>
+                        <li>Joseph and the Amazing Technicolor Dreamcoat</li>
+                        <li>The 25th Annual Putnam County Spelling Bee</li>
+                        <li>Shrek: The Musical</li>
+                        <li>Assassins</li>
+                        <li>42nd Street</li>
+                        <li>Catch Me If You Can</li>
+                        <li>The Pirates of Penzance</li>
+                    </ol>
+                    <!-- <p>I've seen these ones, but they're not fresh enough in my mind to rank them against the others properly:</p>
+                    <ul>
+                        <li></li>
+                    </ul> -->
+                </div>
+                <div id="bottom-left">
+                    <a href="https://pixelbill.neocities.org/" target="_blank">
+                        <img id="pixelbill" src="media/pixelbills/pixelbill.png" alt="pixelbill button">
+                    </a>
+                    <div id="pixelbill-container">
+                        <a href="https://twigsaretasty.neocities.org/" target="_blank">
+                            <img class="pixelbill-display" src="media/pixelbills/legally-blonde.png" alt="pixelbill for Legally Blonde">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="title-box" class="box">
+                <h1>theatre</h1>
+                <p>in 2024, I became invested in musical theatre! on the left are musicals/plays i've seen, and on the right is a list of those which i saw live at some point (to my memory).
+                    <br><br>
+                my list to the left is subject to change frequently, due to it being so long since i watch some of them! it's hard to rank them when the ones i add are much more recent in my mind. i feel the need to say somewhere that i haven't met a musical i didn't like! even though 42nd Street is quite low, it has some of my most favourite songs (even though its a jukebox musical...) and i still enjoy watching it. those shows are mostly in order of what i'd like to rewatch if i had to choose (i am an avid rewatcher and revist my most favourite things very frequently*), making most of my opinion based on rewatchability/enjoyability. sorry thats just how i roll. i will have to implement some sort of system that works for me!
+                <br><br>
+                i am definitely quite inexperienced currently in the musical field (like atp i still have not seen Les Mis im SORRY) but i'm getting there!! i am more than open to recommendations, please send them my way!! i will probably write a detailed list about each show when i feel the need to explain myself more.
+                <br><br>
+                what i have loved especially about diving into the world of theatre is seeing how shows change between productions! (see my Legally Blonde lyric evolution tracker <a href="lb/0.html">here</a>)
+                <br><br>
+                i have always liked musicals, but i never really got "the bug" when i went to see them. as you can tell, i haven't even been able to see that many live, but i've been able to dive deeper into the world of musical theatre, and i've loved every second of it! unlike most people, i didn't grow up participating in theatre, either. my schools never had an established drama club, and "the school musical" never really happened like it seems to in the United States. how unfortunate!
+                <br><br>
+                i always <i>wanted</i> to be involved, but i never had the opportunity. there was a summer theatre camp that my city put on locally that most of my friends went to when we were younger, but when I asked my mom if I could go, she said no :(. it is currently one of my life goals to participate in theatre in some way, probably doing something technical rather than acting... or maybe i'll make it to broadway. hehe (/j)
+                <br><br>
+                *this is the same way i rate movies on letterboxd... if you even care.
+                </p>
+                <p>pages about theatre i would love to make in the future because i have Many thoughts:</p>
+                <ul class="list">
+                    <li>revivals</li>
+                    <li>stage to screen adaptations</li>
+                    <li>original musicals vs screen/page to stage</li>
+                    <li>cast albums</li>
+                </ul>
+            </div>
+            <div id="right">
+                <div id="live" class="box">
+                    <h1>seen live:</h1>
+                    <ul>
+                        <li>Legally Blonde (2024)</li>
+                        <li>Catch Me If You Can (2019)</li>
+                        <li>Into the Woods (2018)</li>
+                        <li>42nd Street (2016)</li>
+                        <li>Joseph and the Amazing Technicolor Dreamcoat (2011, 2017)</li>
+                    </ul>
+                </div>
+                <div id="favsongs" class="box">
+                    <h1>fav songs:</h1>
+                    <p>(select)</p>
+                    <ul class="list">
+                        <li>We See the Light</li>
+                        <li>Vamp!</li>
+                        <li>Lullaby of Broadway</li>
+                        <li>Legally Blonde</li>
+                        <li>On the Steps of the Palace</li>
+                        <li>You Can't Stop the Beat</li>
+                        <li>For Good</li>
+                        <li>His Name is Lancelot (Spamalot)</li>
+                        <li>Days Like This</li>
+                        <li>Live in Living Color</li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
