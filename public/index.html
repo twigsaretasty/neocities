@@ -10,9 +10,9 @@
         font-family: "Adelia";
         src: url('/fonts/ADELIA.otf') format("opentype");
     }
-    @font-face {
-        font-family: "coolvetica";
-        src: url('/fonts/coolvetica\ rg.otf') format("opentype");
+       @font-face {
+        font-family: "Lexend";
+        src: url('/fonts/Lexend-VariableFont_wght.ttf') format("truetype");
         }
     html {
         display: table; 
@@ -46,6 +46,7 @@
         font-family: "Adelia", "Roboto", Verdana;
         text-shadow: 2px 3px #c579ec;
         font-size: smalls;
+        text-align: center;
     }
     #gastrodon-sprite {
         text-align: center;
@@ -57,7 +58,7 @@
         text-align: center;
     }
     p, ul {
-        font-family: coolvetica, times, serif;
+        font-family: Lexend, times, serif;
     }
     #button {
         text-align: center;
@@ -68,7 +69,7 @@
         background-color: #7acafd;
         color: white;
         text-decoration: none;
-        font-family: 'coolvetica', 'Roboto', Verdana;
+        font-family: Lexend, 'Roboto', Verdana;
         font-size: 18px;
         padding: 15px 30px;
         margin-top: 50px;
@@ -77,6 +78,16 @@
     .link-button:hover {
         background-color: #c579ec;
     }
+
+    /* media query */
+    @media screen and (max-width: 900px) {
+
+        body { 
+            overflow: scroll;
+        }
+
+    }
+
     </style>
 </head>
 <body>
